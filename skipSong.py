@@ -1,3 +1,5 @@
+
+
 def skipSong(spotifyObject, device_id):
 
     current = spotifyObject.current_playback()
@@ -11,10 +13,10 @@ def skipSong(spotifyObject, device_id):
 
 
 def incrementVolume(spotifyObject, device_id):
+
     current = spotifyObject.current_playback()
     
     newVolume = current['device']['volume_percent'] + 2
-
 
     spotifyObject.volume(newVolume,device_id)
     
