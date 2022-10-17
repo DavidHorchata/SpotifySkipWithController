@@ -36,3 +36,21 @@ class Controller:
                     incrementVolume(spotifyObject, device_id)
                 else:
                     pass
+                
+    def getCredentials(self):
+        scope = ['user-read-currently-playing', 'user-modify-playback-state', 'user-read-playback-state']
+        token = SpotifyOAuth(scope=scope)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
